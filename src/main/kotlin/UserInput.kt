@@ -12,9 +12,21 @@ fun userInput(size: Int): Int {
                 x
             }
         } else {
-            println("Следует ввсети число!")
+            println("Следует ввести число!")
             scanner.next()
             -1
+        }
+    }
+}
+
+fun userInputName(): String {
+    val scanner = Scanner(System.`in`)
+    while (true) {
+        val x = scanner.nextLine()
+        if (x.trimStart().isEmpty()) {
+            println("Вы ничего не ввели!")
+        } else {
+            return x
         }
     }
 }

@@ -1,10 +1,7 @@
-import java.util.*
-
 fun createNewNote(): Notes {
-    val scanner = Scanner(System.`in`)
     println("Введите название новой заметки")
-    val name = scanner.nextLine()
+    val name = userInputName()
     println("Теперь напишите текст заметки")
-    val text = scanner.nextLine()
+    val text = userInputName()
     return Notes(name, text)
 }
